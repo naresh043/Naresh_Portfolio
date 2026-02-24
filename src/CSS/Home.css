@@ -40,19 +40,20 @@
   z-index: 1;
 }
 
-.photo-ring {
+/* .photo-ring {
   position: absolute;
-  width: 330px;
-  height: 330px;
+  width: 360px;
+  height: 360px;
   border-radius: 50%;
   border: 2px dashed var(--accent);
   opacity: 0.3;
-}
+} */
 
 .photo-frame {
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 350px;
+  height: 350px;
+  right: 80px;
   border-radius: 16px;          /* square */
   overflow: hidden;
   border: 3px solid var(--accent);
