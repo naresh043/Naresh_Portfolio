@@ -1,0 +1,280 @@
+/* ================= HOME SECTION ================= */
+
+.home-section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  padding: 3rem 2rem 1rem;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(0, 255, 200, 0.08),
+    transparent 80%
+  );
+  color: #fff;
+}
+
+/* ================= LAYOUT ================= */
+
+.home-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 1250px;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* ================= PHOTO ================= */
+
+.photo-container {
+  position: relative;
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.photo-ring {
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  border: 2px dashed var(--accent);
+  opacity: 0.3;
+}
+
+.photo-frame {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  border-radius: 16px;          /* square */
+  overflow: hidden;
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 45px rgba(0,255,200,0.25);
+  background: #000;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* ================= INFO SECTION ================= */
+
+.home-info {
+  flex: 1;
+  min-width: 0;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.4rem;
+}
+
+/* 🔥 FIXED: BlurText SAFE GRADIENT */
+.home-name {
+  display: inline-block;
+  font-weight: 700;
+  user-select: none;
+}
+
+/* Gradient applied per animated letter */
+.home-name span {
+  color: #1e90ff;              /* Dodger Blue */
+  will-change: transform, opacity, filter;
+}
+
+/* ================= TYPING EFFECT ================= */
+
+.typing-effect {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 0.4rem;
+  max-width: 95%;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid var(--accent);
+  animation: typing 3.5s steps(40, end) forwards,
+    blink 0.8s infinite;
+}
+
+/* ================= PROFESSION TAGS ================= */
+
+.profession-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.4rem;
+}
+
+.profession-tag {
+  border: 1px solid var(--accent);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  cursor: default;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* ================= INFO CARDS ================= */
+
+.info-cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 12px 18px;
+  min-width: 180px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 255, 200, 0.08);
+}
+
+.info-card p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 4px;
+}
+
+/* ================= QUICK LINKS ================= */
+
+.quick-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.quick-links-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.quick-links-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.quick-link-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: brightness(0.9);
+  transition: all 0.3s ease;
+}
+/* Orbit container for curved loop */
+.orbit-container {
+  position: relative;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .home-section {
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .home-top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .photo-ring {
+    width: 220px;
+    height: 220px;
+  }
+
+  .photo-frame {
+    width: 200px;
+    height: 200px;
+  }
+
+  .home-info {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .typing-effect {
+    font-size: 1rem;
+    white-space: normal;
+    border: none;
+    animation: none;
+    text-align: center;
+  }
+
+  .profession-tags {
+    justify-content: center;
+  }
+
+  .profession-tag {
+    font-size: 0.85rem;
+    padding: 6px 14px;
+  }
+
+  .info-cards {
+    justify-content: center;
+  }
+
+  .info-card {
+    min-width: 140px;
+    padding: 10px 14px;
+  }
+
+  .quick-links-title {
+    font-size: 1.2rem;
+  }
+
+  .quick-link-img {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+/* ================= KEYFRAMES ================= */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
