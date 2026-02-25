@@ -193,6 +193,69 @@
   position: relative;
 }
 
+
+
+/* buible */
+/* ================= SKILLS : NORMAL → BUBBLE ================= */
+
+.skill-bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 1.6rem;
+}
+
+/* NORMAL STATE (looks like clean tags) */
+.skill-pill {
+  padding: 8px 18px;
+  border-radius: 10px;                 /* NOT bubble initially */
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  cursor: default;
+  user-select: none;
+  white-space: nowrap;
+
+  transition:
+    border-radius 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease,
+    color 0.3s ease;
+}
+
+/* 🔥 HOVER → BUBBLE MODE */
+.skill-pill:hover {
+  border-radius: 999px;                /* becomes bubble */
+  color: #ffffff;
+
+  background: linear-gradient(
+    135deg,
+    #1e90ff,
+    #00c8ff
+  );
+
+  box-shadow:
+    0 10px 28px rgba(30, 144, 255, 0.45),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+}
+
+/* Mobile center */
+@media (max-width: 768px) {
+  .skill-bubbles {
+    justify-content: center;
+  }
+
+  .skill-pill {
+    font-size: 0.85rem;
+    padding: 7px 14px;
+  }
+}
+
+
 /* ================= MOBILE RESPONSIVE ================= */
 
 @media (max-width: 768px) {

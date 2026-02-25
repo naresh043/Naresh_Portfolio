@@ -12,15 +12,23 @@ const PROFESSIONS = [
   "MERN Stack Developer",
   "Frontend Developer",
   "React Developer",
-  "JavaScript Developer",
+  "Backend Developer",
   "Full Stack Developer",
 ];
 
 const QUICK_LINKS = [
   { img: "/github.png", title: "GitHub", link: "https://github.com/naresh043" },
-  { img: "/linkedin.png", title: "LinkedIn", link: "https://www.linkedin.com/in/nareshsanjeev" },
+  {
+    img: "/linkedin.png",
+    title: "LinkedIn",
+    link: "https://www.linkedin.com/in/nareshsanjeev",
+  },
   { img: "/gmail.png", title: "Email", link: "mailto:naresh732003@gmail.com" },
-  { img: "/whatsapp.png", title: "WhatsApp", link: "https://wa.me/919703328790" },
+  {
+    img: "/whatsapp.png",
+    title: "WhatsApp",
+    link: "https://wa.me/919703328790",
+  },
 ];
 
 /* ================= ANIMATIONS ================= */
@@ -75,18 +83,22 @@ export default function Home() {
           </h1>
 
           <p className="home-subtitle">
-            MERN Stack Developer • React • Redux Toolkit • REST APIs
+            MERN Stack Developer | Frontend Developer | Full Stack Developer
           </p>
 
-          <div className="profession-tags">
-            {PROFESSIONS.map((role) => (
-              <motion.span
-                key={role}
-                className="profession-tag"
-                whileHover={{ scale: 1.08 }}
+          <div className="skill-bubbles">
+            {PROFESSIONS.map((skill, index) => (
+              <motion.div
+                key={skill}
+                className="skill-pill"
+                whileHover={{
+                  scale: 1.15,
+                  y: -6,
+                }}
+                transition={{ type: "spring", stiffness: 220, damping: 14 }}
               >
-                {role}
-              </motion.span>
+                {skill}
+              </motion.div>
             ))}
           </div>
 
