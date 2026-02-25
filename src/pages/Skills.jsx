@@ -3,72 +3,66 @@ import { motion } from "framer-motion";
 import "./Skills.css";
 
 const SKILLS = [
-  { name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-  { name: "Django", logo: "https://static.cdnlogo.com/logos/d/3/django.svg" },
-  { name: "Django REST Framework", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/djangorest/djangorest-original.svg" },
+  { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
 
   { name: "HTML5", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
   { name: "CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
-  { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { name: "Bootstrap", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
   { name: "React.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
 
-  { name: "Bootstrap", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
-  { name: "Framer Motion", logo: "https://cdn.worldvectorlogo.com/logos/framer-motion.svg" },
+  { name: "Redux Toolkit", logo: "https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png" },
 
-  { name: "Render", logo: "https://avatars.githubusercontent.com/u/36424661?s=200&v=4" },
+  { name: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+  { name: "Express.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
 
+  { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
 
-  { name: "MySQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
-  { name: "SQLite", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" },
-  { name: "Supabase", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" },
-
-  { name: "JWT Authentication", logo: "https://cdn.worldvectorlogo.com/logos/jwt-3.svg" },
+  { name: "JWT", logo: "https://cdn.worldvectorlogo.com/logos/jwt-3.svg" },
+  { name: "bcrypt", logo: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/bcrypt.svg" },
 
   { name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
   { name: "GitHub", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
-
-  { name: "Power BI", logo: "https://logo.svgcdn.com/logos/microsoft-power-bi.svg" },
+  { name: "Postman", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" },
 ];
 
 const ROWS = [
   [
     {
       title: "Programming Languages",
-      items: ["Python", "JavaScript (ES6+)",],
+      items: ["JavaScript (ES6+)"],
     },
     {
       title: "Frontend Technologies",
-      items: ["React.js", "HTML5", "CSS3", "Bootstrap", "Framer Motion"],
+      items: ["React.js", "HTML5", "CSS3", "Bootstrap"],
     },
     {
       title: "Backend Technologies",
-      items: ["Django", "Django REST Framework", "JWT Authentication", "REST APIs"],
+      items: ["Node.js", "Express.js", "REST APIs"],
     },
     {
-      title: "Databases & DevOps",
-      items: ["MySQL (Aiven)", "SQLite", "Supabase", "Git", "GitHub", "Render"],
+      title: "Databases & Tools",
+      items: ["MongoDB", "Git", "GitHub", "Postman"],
     },
   ],
   [
     {
       title: "Core Technical Skills",
       items: [
-        "Full Stack Web Development",
-        "API Development",
-        "Authentication & Authorization",
-        "Admin Dashboard Development",
-        "Cloud Deployment",
+        "MERN Stack Development",
+        "REST API Integration",
+        "Role-Based Access Control",
+        "JWT Authentication",
+        "State Management (Redux Toolkit)",
       ],
     },
     {
       title: "Professional Skills",
       items: [
         "Problem Solving",
-        "Team Collaboration",
         "Clean Code Practices",
-        "Time Management",
+        "Team Collaboration",
+        "Version Control (Git)",
         "Continuous Learning",
-        "Leadership Quality"
       ],
     },
   ],

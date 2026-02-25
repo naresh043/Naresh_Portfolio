@@ -2,91 +2,92 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "../CSS/Certificates.css";
 
-
 // ✅ Certificates data (added URLs for View button)
 const CERTS = {
   tech: [
     {
-      title: "Webathon – 2nd Prize",
-      org: "10Coders",
+      title: "Frontend Developer Internship",
+      org: "AlterSquare",
       date: "2025",
-      img: "/certs/webathon.jpg",
-      link: "/certs/webathon.jpg",
+      img: "/certificates/altersquare-internship-certificate.jpg",
+      link: "/certificates/altersquare-internship-certificate.jpg",
     },
     {
-      title: "Coding Challenge – 2nd Prize",
-      org: "College Technical Event",
-      date: "2025",
-      img: "/certs/codingchallenge.jpg",
-      link: "/certs/codingchallenge.jpg",
+      title: "Full Stack Development Training Program",
+      org: "10000 Coders",
+      date: "2024",
+      img: "/certificates/10kcoders-full.png",
+      link: "/certificates/10kcoders-full.png",
     },
     {
-      title: "Cisco Data Analytics",
-      org: "Cisco Networking Academy",
-      date: "2025",
-      img: "/certs/cisco-data-analytics.jpg",
-      link: "/certs/cisco-data-analytics.jpg",
+      title: "Namaste JavaScript",
+      org: "NamasteDev (Akshay Saini)",
+      date: "2024",
+      img: "/certificates/namaste-js.png",
+      link: "/certificates/namaste-js.png",
     },
     {
-      title: "Frontend Development Internship",
-      org: "APSCHE",
-      date: "2023",
-      img: "/certs/apsche-frontend.jpg",
-      link: "/certs/apsche-frontend.jpg",
+      title: "Python Data Structures",
+      org: "University of Michigan (Coursera)",
+      date: "2022",
+      img: "/certificates/python-data-structures.jpg",
+      link: "/certificates/python-data-structures.jpg",
     },
     {
-      title: "AI/ML Virtual Internship",
-      org: "VCUBE Software Solutions",
-      date: "2025",
-      img: "/certs/vcube-aiml.jpg",
-      link: "/certs/vcube-aiml.jpg",
+      title: "Programming for Everybody (Python)",
+      org: "University of Michigan (Coursera)",
+      date: "2022",
+      img: "/certificates/python-for-everybody.jpg",
+      link: "/certificates/python-for-everybody.jpg",
     },
-    
-    
+    {
+  title: "Design Faster with Figma – UI/UX Workshop",
+  org: "GUVI Geek Networks × HCL",
+  date: "2026",
+  img: "/certificates/guvi-figma-workshop.png",
+  link: "/certificates/guvi-figma-workshop.png",
+},
   ],
+
   other: [
     {
-      title: "NCC 'C' Certificate",
-      org: "National Cadet Corps",
+      title: "Automotive – 4 Wheeler Expert Internship",
+      org: "APSSDC – Siemens Center",
+      date: "2023",
+      img: "/certificates/automotive.jpg",
+      link: "/certificates/automotive.jpg",
+    },
+    {
+      title: "Product Design (Mechanical)",
+      org: "SkillDzire / APSCHE",
       date: "2024",
-      img: "/certs/ncc-certificate.jpg",
-      link: "/certs/ncc-certificate.jpg",
+      img: "/certificates/product-design.jpg",
+      link: "/certificates/product-design.jpg",
     },
-    {
-      title: "Power BI Workshop",
-      org: "OfficeMaster",
-      date: "2025",
-      img: "/certs/powerbi-workshop.jpg",
-      link: "/certs/powerbi-workshop.jpg",
-    },
-    {
-      title: "AWS Solutions Architecture Virtual Experience Program",
-      org: "Amazon Web Services (Forage)",
-      date: "2022",
-      img: "/certs/aws-solutions-architecture.jpg",
-      link: "/certs/aws-solutions-architecture.jpg",
-    },
-    {
-      title: "Salesforce Developer Virtual Internship",
-      org: "SmartInternz / Salesforce",
-      date: "2022",
-      img: "/certs/salesforce-internship.jpg",
-      link: "/certs/salesforce-internship.jpg",
-    },
-    
-    
   ],
 };
-
 
 export default function Certificates() {
   const [tab, setTab] = useState("tech");
   const [selectedCert, setSelectedCert] = useState(null);
 
   return (
-    <section className="container" style={{ padding: "40px 0" }}>
-      <div className="card" style={{ background: "#111", borderRadius: 12, padding: 24 }}>
-        <h2 style={{ fontSize: "1.8rem", color: "#fff", marginBottom: 4 }}>Certificates 🏅</h2>
+    <section
+      className="certificates-root"
+      style={{
+        padding: "40px 0",
+        position: "relative",
+        isolation: "isolate",
+        zIndex: 1,
+      }}
+    >
+      <div
+        className="cert-card"
+        style={{ background: "#111", borderRadius: 12, padding: 24 }}
+      >
+        <h2 style={{ fontSize: "1.8rem", color: "#fff", marginBottom: 4 }}>
+          Certificates 🏅
+        </h2>
         <p className="lead" style={{ color: "#aaa" }}>
           Explore my certifications — technical & others.
         </p>
@@ -128,7 +129,7 @@ export default function Certificates() {
             {CERTS[tab].map((c, idx) => (
               <motion.div
                 key={c.title}
-                className="cert card"
+                className="cert-item"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
@@ -200,7 +201,7 @@ export default function Certificates() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              zIndex: 1000,
+              zIndex: 9999,
             }}
             onClick={() => setSelectedCert(null)}
           >
