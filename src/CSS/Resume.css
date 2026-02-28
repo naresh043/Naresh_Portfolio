@@ -47,6 +47,7 @@
   -webkit-background-clip:text;
   color:transparent;
   text-shadow:0 0 20px var(--accent);
+    /* border: 2px solid red; */
 }
 
 .resume-subtitle{
@@ -212,6 +213,10 @@
 .resume-download:hover{
   transform:scale(1.08);
   box-shadow:0 0 25px var(--accent);
+}
+
+.resume-icon {
+  color: #6366f1; /* indigo-500 */
 }
 
 

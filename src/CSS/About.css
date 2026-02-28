@@ -97,6 +97,22 @@
   color: var(--text-muted);
 }
 
+.education-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.edu-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: 0 0 25px rgba(0, 255, 200, 0.15);
+  backdrop-filter: blur(12px);
+}
+
+
+
 
 /* ========= MOBILE ABOUT FORCE COMPACT ========= */
 @media (max-width: 768px) {
