@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import BlurText from "../components/helpers/BlurText";
 import CurvedLoop from "../components/helpers/CurvedLoop";
+import profileImg from "../../assets/photos/NareshPhoto.jpg";
 
 import "../CSS/Home.css";
 import "../index.css";
@@ -59,7 +60,7 @@ export default function Home() {
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
           >
             <motion.img
-              src="../../assets/photos/NareshPhoto.jpg"
+              src={profileImg}
               alt="Naresh"
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}

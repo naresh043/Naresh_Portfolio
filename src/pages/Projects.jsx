@@ -2,7 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
 import "../CSS/projects.css";
-import img from "../../photos/project-img/inventory-order.png";
+import inventoryOrder from "../../photos/project-img/inventory-order.png";
+import eLearning from "../../photos/project-img/e-learning.png";
+
 
 import CardSwap, { Card } from "../components/helpers/cardswap/CardSwap";
 
@@ -10,7 +12,7 @@ const PROJECTS = [
   {
     title: "📦 Inventory & Order Management System",
     desc: "Role-based full-stack web application with inventory tracking, order management, dashboards, and JWT-based access control.",
-    ss: "../../photos/project-img/inventory-order.png",
+    ss: inventoryOrder ,
     tech: [
       "React",
       "Redux Toolkit",
@@ -28,7 +30,7 @@ const PROJECTS = [
   {
     title: "🎓 E-Tech – E-Learning Platform",
     desc: "Full-stack e-learning platform for course browsing and enrollment with authentication and role-based access.",
-    ss: "../../photos/project-img/e-learning.png",
+    ss: eLearning,
     tech: [
       "React",
       "Redux Toolkit",
