@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&color=00FFD5&center=true&vCenter=true&width=700&lines=Hi+I'm+Shanmukha+Penta;Full+Stack+Developer;React+%7C+Python+%7C+Django;AI+%7C+ML+Explorer;Welcome+to+my+Portfolio+🚀"/>
+  <img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&size=28&pause=1000&color=00FFD5&center=true&vCenter=true&width=700&lines=Hi+I'm+Sanjeevappa+Gari+Naresh;Frontend+%2F+MERN+Stack+Developer;React+%7C+Redux+%7C+Node+%7C+MongoDB;Building+Real-World+Web+Apps;Welcome+to+my+Portfolio+🚀" />
 </p>
 
 <p align="center">
@@ -93,7 +93,6 @@ I love crafting clean user interfaces, integrating scalable backend APIs, and bu
   <!-- Git -->
   <img src="https://raw.githubusercontent.com/naresh043/Naresh_Portfolio/main/assets/skills/git.svg" width="130"/>
 </p>
-
 ## ⭐ Featured Projects
 
 ### 📦 Inventory & Order Management System  
@@ -113,14 +112,11 @@ Node.js, Express.js, MongoDB, JWT
 🌐 Live: https://inventory-orders-management-system.netlify.app/login  
 💻 GitHub: https://github.com/naresh043/Inventory-OrderManagementSystem-
 
----
-</a>
-<a href="https://github.com/shannu1653/Shanmukha_Portfolio">
-<img src="https://raw.githubusercontent.com/naresh043/Naresh_Portfolio/tree/main/assets/skills/portfolio1.png">
-</a>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/naresh043/Naresh_Portfolio/main/assets/skills/inventory-order.png" width="70%"/>
 </p>
-_---
 
+---
 
 ### 🎓 E-Tech – Full-Stack E-Learning Platform
 
@@ -136,13 +132,10 @@ React, Redux Toolkit, Node.js, Express.js, MongoDB, JWT, REST APIs
 🌐 Live: https://e-learnify-nine.vercel.app/  
 💻 GitHub: https://github.com/naresh043/react-project
 
----
-
-
 <p align="center">
-<a href="https://github.com/naresh043/react-project">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=shannu1653&repo=MCA_Study_Hub&theme=tokyonight">
+  <img src="https://raw.githubusercontent.com/naresh043/Naresh_Portfolio/main/assets/skills/e-learning.png" width="70%"/>
 </p>
+
 ---
 
 ## 🧠 What I Focus On
@@ -164,14 +157,11 @@ React, Redux Toolkit, Node.js, Express.js, MongoDB, JWT, REST APIs
 
 ---
 
-adding soon...................
----
-
 ## 📸 Project Gallery
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/shannu1653/Shanmukha_Portfolio/main/assets/skills/portfolio.png" width="45%"/>
-<img src="https://raw.githubusercontent.com/shannu1653/Shanmukha_Portfolio/main/assets/skills/p1.png" width="45%"/>
+  <img src="https://raw.githubusercontent.com/naresh043/Naresh_Portfolio/main/assets/skills/portfolio1.png" width="45%"/>
+  <img src="https://raw.githubusercontent.com/naresh043/Naresh_Portfolio/main/assets/skills/p1.png" width="45%"/>
 </p>
 
 ---
@@ -188,9 +178,9 @@ adding soon...................
 
 ## 👀 Visitor Counter
 
-<img src="https://komarev.com/ghpvc/?username=naresh043&style=for-the-badge&color=00ffd5"/>
-
----
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=naresh043&style=for-the-badge&color=00ffd5"/>
+</p>
 
 ---
 
