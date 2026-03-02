@@ -46,7 +46,7 @@ export default function Contact() {
           message: form.message,
           time: new Date().toLocaleString(),
         },
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       )
       .then(
         () => {
@@ -56,17 +56,36 @@ export default function Contact() {
         (error) => {
           console.error("FAILED...", error);
           setStatus("❌ Failed to send. Try again later.");
-        }
+        },
       );
   };
 
   const quickLinks = [
-    { img: "/github.png", title: "GitHub", link: "https://github.com/shannu1653" },
-    { img: "/linkedin.png", title: "LinkedIn", link: "https://www.linkedin.com/in/shanmukhapenta/" },
-    { img: "/gmail.png", title: "Email", link: "mailto:pentashanmukha2002@gmail.com" },
-    { img: "/whatsapp.png", title: "WhatsApp", link: "https://wa.me/+918096085857" },
-    { img: "/insta.png", title: "Instagram", link: "https://www.instagram.com/mr.shannu1653/" },
-    { img: "/facebook.png", title: "Facebook", link: "https://www.facebook.com/shanmukhap.penta/" },
+    {
+      img: "/github.png",
+      title: "GitHub",
+      link: "https://github.com/naresh043",
+    },
+    {
+      img: "/linkedin.png",
+      title: "LinkedIn",
+      link: "https://www.linkedin.com/in/nareshsanjeev/",
+    },
+    {
+      img: "/gmail.png",
+      title: "Email",
+      link: "mailto:naresh732003@gmail.com",
+    },
+    {
+      img: "/whatsapp.png",
+      title: "WhatsApp",
+      link: "https://wa.me/919703328790",
+    },
+    {
+      img: "/insta.png",
+      title: "Instagram",
+      link: "https://www.instagram.com/_mr.naresh_043/",
+    },
   ];
 
   return (
@@ -86,7 +105,8 @@ export default function Contact() {
         transition={{ delay: 0.3, duration: 0.8 }}
         className="contact-subtitle"
       >
-        Whether it’s a new project, a collaboration, or just to say hi — I’d love to hear from you!
+        Whether it’s a new project, a collaboration, or just to say hi — I’d
+        love to hear from you!
       </motion.p>
 
       <motion.div className="contact-links">
@@ -122,12 +142,45 @@ export default function Contact() {
         transition={{ delay: 0.4, duration: 0.9 }}
         className="contact-form"
       >
-        <input type="text" name="name" placeholder="Your Name" value={form.name} onChange={handleChange} required />
-        <input type="text" name="contact" placeholder="Your Email or Phone" value={form.contact} onChange={handleChange} required />
-        <input type="text" name="subject" placeholder="Subject" value={form.subject} onChange={handleChange} required />
-        <textarea name="message" placeholder="Your Message..." value={form.message} onChange={handleChange} rows="5" required />
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          value={form.name}
+          onChange={handleChange}
+          required
+        />
+        <input
+          type="text"
+          name="contact"
+          placeholder="Your Email or Phone"
+          value={form.contact}
+          onChange={handleChange}
+          required
+        />
+        <input
+          type="text"
+          name="subject"
+          placeholder="Subject"
+          value={form.subject}
+          onChange={handleChange}
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Your Message..."
+          value={form.message}
+          onChange={handleChange}
+          rows="5"
+          required
+        />
 
-        <motion.button type="submit" className="contact-btn" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+        <motion.button
+          type="submit"
+          className="contact-btn"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
           🚀 Send Message
         </motion.button>
 
