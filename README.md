@@ -3,13 +3,13 @@
 </p>
 
 <p align="center">
-<a href="https://drive.google.com/file/d/1bC3viGDF6CxyWz5S2h5CY9PbG81475JD/view">
+<a href="https://drive.google.com/file/d/1jCPKZ2ku41HZQF3XK212s01Umq1xGN3H/view?usp=sharing">
 <img src="https://img.shields.io/badge/Download%20CV-00ffd5?style=for-the-badge"/>
 </a>
 <a href="https://shanmukha-portfolio-three.vercel.app/">
 <img src="https://img.shields.io/badge/Portfolio-6366f1?style=for-the-badge"/>
 </a>
-<a href="https://www.linkedin.com/in/shanmukhapenta/">
+<a href="https://www.linkedin.com/in/nareshsanjeev/">
 <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge"/>
 </a>
 </p>
@@ -18,9 +18,9 @@
 
 ## 👋 About Me
 
-I’m **Shanmukha Penta**, a passionate **Full-Stack Developer** focused on building modern applications using **React, Django, and Python**.
+I’m **Sanjeevappa Gari Naresh**, a passionate **Frontend / MERN Stack Developer** focused on building modern, responsive web applications using **React, JavaScript, and Redux Toolkit**.
 
-I love crafting premium UI, scalable backends, and meaningful digital products.
+I love crafting clean user interfaces, integrating scalable backend APIs, and building meaningful digital products.
 
 ---
 

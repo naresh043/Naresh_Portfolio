@@ -2,118 +2,128 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import "../CSS/Gallery.css";
+import Masonry from "../components/helpers/Masonry/MasonryGrid";
 
 const IMAGES = {
-personal: [
-  {
-    id: 1,
-    caption: "Exploring the historic vibes of Golconda Fort 🏰✨ Travel, culture, and inspiration in one place.",
-    photos: ["/gallery/golconda1.jpg"],
-  },
-  {
-    id: 2,
-    caption: "Walking through history at Golconda 🧭 A refreshing escape that fuels creativity.",
-    photos: ["/gallery/golconda2.jpg"],
-  },
-  {
-    id: 3,
-    caption: "Golconda Fort visit 🏰 Capturing moments where heritage meets passion for travel.",
-    photos: ["/gallery/golconda3.jpg"],
-  },
-  {
-    id: 5,
-    caption: "Rameswaram vibes 🌊🛕 A calm mind and grateful heart after this sacred visit.",
-    photos: ["/gallery/rameswaram2.jpg"],
-  },
-  {
-    id: 4,
-    caption: "Spiritual journey to Rameswaram Temple 🛕✨ Finding peace and positive energy.",
-    photos: ["/gallery/rameswaram1.jpg"],
-  },
-  
-  {
-    id: 6,
-    caption: "Blessed moments at Rameswaram 🛕 Traveling teaches balance between life and work.",
-    photos: ["/gallery/rameswaram3.jpg"],
-  },
-  {
-  id: 7,
-  caption: "NCC journey 🇮🇳 Learning leadership, discipline, and teamwork through real-world training experiences.",
-  photos: ["/gallery/ncc1.jpg"],
-},
-{
-  id: 9,
-  caption: "NCC Camp Leadership 🏕️ Leading with responsibility, teamwork, and discipline during training camps.",
-  photos: ["/gallery/ncc-camp.jpeg"],
-},
-{
-  id: 10,
-  caption: "Stronger together 🤝 Moments with friends that taught unity, discipline, and lifelong teamwork.",
-  photos: ["/gallery/friends-unity.jpeg"],
-},
-],
+  personal: [
+    {
+      id: 1,
+      caption:
+        "Exploring the historic vibes of Golconda Fort 🏰✨ Travel, culture, and inspiration in one place.",
+      photos: ["/gallery/golconda1.jpg"],
+    },
+    {
+      id: 2,
+      caption:
+        "Walking through history at Golconda 🧭 A refreshing escape that fuels creativity.",
+      photos: ["/gallery/golconda2.jpg"],
+    },
+    {
+      id: 3,
+      caption:
+        "Golconda Fort visit 🏰 Capturing moments where heritage meets passion for travel.",
+      photos: ["/gallery/golconda3.jpg"],
+    },
+    {
+      id: 5,
+      caption:
+        "Rameswaram vibes 🌊🛕 A calm mind and grateful heart after this sacred visit.",
+      photos: ["/gallery/rameswaram2.jpg"],
+    },
+    {
+      id: 4,
+      caption:
+        "Spiritual journey to Rameswaram Temple 🛕✨ Finding peace and positive energy.",
+      photos: ["/gallery/rameswaram1.jpg"],
+    },
 
+    {
+      id: 6,
+      caption:
+        "Blessed moments at Rameswaram 🛕 Traveling teaches balance between life and work.",
+      photos: ["/gallery/rameswaram3.jpg"],
+    },
+    {
+      id: 7,
+      caption:
+        "NCC journey 🇮🇳 Learning leadership, discipline, and teamwork through real-world training experiences.",
+      photos: ["/gallery/ncc1.jpg"],
+    },
+    {
+      id: 9,
+      caption:
+        "NCC Camp Leadership 🏕️ Leading with responsibility, teamwork, and discipline during training camps.",
+      photos: ["/gallery/ncc-camp.jpeg"],
+    },
+    {
+      id: 10,
+      caption:
+        "Stronger together 🤝 Moments with friends that taught unity, discipline, and lifelong teamwork.",
+      photos: ["/gallery/friends-unity.jpeg"],
+    },
+  ],
 
   projects: [
-  {
-    id: 1,
-    caption:
-      "🎓 MCA Study Hub – Full-stack academic platform for accessing notes and previous-year papers with JWT auth, admin dashboard, cloud PDFs, and dark/light mode.",
-    photos: [
-      "/gallery/mcastudy1.png",
-      "/gallery/mcastudy2.png",
-      "/gallery/mcastudy3.png",
-      "/gallery/mcastudy4.png",
-    ],
-  },
-  {
-    id: 2,
-    caption:
-      "⚡ Smart EV Station Locator – Python full-stack app to search nearby charging stations, view availability, and manage stations via Django Admin.",
-    photos: [
-      "/gallery/ev1.jpg",
-      "/gallery/ev2.jpg",
-      "/gallery/ev3.jpg",
-      "/gallery/ev4.jpg",
-    ],
-  },
-  {
-    id: 3,
-    caption:
-      "🍽 Smart Canteen Menu System – Django full-stack ordering system with cart, authentication, admin CRUD, analytics, and production deployment.",
-    photos: [
-      "/gallery/canteen1.jpg",
-      "/gallery/canteen2.jpg",
-      "/gallery/canteen3.jpg",
-      "/gallery/canteen4.jpg",
-    ],
-  },
-  {
-    id: 4,
-    caption:
-      "💼 Personal Portfolio – React-based responsive portfolio showcasing projects, skills, and animations using Framer Motion.",
-    photos: [
-      "/gallery/portfolio1.png",
-      "/gallery/portfolio2.png",
-      "/gallery/portfolio3.png",
-      "/gallery/portfolio4.png",
-    ],
-  },
-],
+    {
+      id: 1,
+      caption:
+        "🎓 MCA Study Hub – Full-stack academic platform for accessing notes and previous-year papers with JWT auth, admin dashboard, cloud PDFs, and dark/light mode.",
+      photos: [
+        "/gallery/mcastudy1.png",
+        "/gallery/mcastudy2.png",
+        "/gallery/mcastudy3.png",
+        "/gallery/mcastudy4.png",
+      ],
+    },
+    {
+      id: 2,
+      caption:
+        "⚡ Smart EV Station Locator – Python full-stack app to search nearby charging stations, view availability, and manage stations via Django Admin.",
+      photos: [
+        "/gallery/ev1.jpg",
+        "/gallery/ev2.jpg",
+        "/gallery/ev3.jpg",
+        "/gallery/ev4.jpg",
+      ],
+    },
+    {
+      id: 3,
+      caption:
+        "🍽 Smart Canteen Menu System – Django full-stack ordering system with cart, authentication, admin CRUD, analytics, and production deployment.",
+      photos: [
+        "/gallery/canteen1.jpg",
+        "/gallery/canteen2.jpg",
+        "/gallery/canteen3.jpg",
+        "/gallery/canteen4.jpg",
+      ],
+    },
+    {
+      id: 4,
+      caption:
+        "💼 Personal Portfolio – React-based responsive portfolio showcasing projects, skills, and animations using Framer Motion.",
+      photos: [
+        "/gallery/portfolio1.png",
+        "/gallery/portfolio2.png",
+        "/gallery/portfolio3.png",
+        "/gallery/portfolio4.png",
+      ],
+    },
+  ],
 
- achievements: [
-  {
-    id: 1,
-    caption: "🥈 Won 2nd Prize in Webathon conducted by 10Coders for building a full-stack web application.",
-    photos: ["/gallery/webathon.jpg"],
-  },
-  {
-    id: 2,
-    caption: "🥈 Secured 2nd Prize in Coding Challenge for problem-solving and algorithmic skills.",
-    photos: ["/gallery/codingchallenge.png"],
-  },
-],
-
+  achievements: [
+    {
+      id: 1,
+      caption:
+        "🥈 Won 2nd Prize in Webathon conducted by 10Coders for building a full-stack web application.",
+      photos: ["/gallery/webathon.jpg"],
+    },
+    {
+      id: 2,
+      caption:
+        "🥈 Secured 2nd Prize in Coding Challenge for problem-solving and algorithmic skills.",
+      photos: ["/gallery/codingchallenge.png"],
+    },
+  ],
 };
 
 // ✨ Animation Variants
@@ -216,23 +226,17 @@ export default function Gallery() {
               whileHover={{ y: -4 }}
             >
               <p className="caption">{post.caption}</p>
-              <div
-                className={`photo-grid ${
-                  post.photos.length > 1 ? "multi" : "single"
-                }`}
-              >
-                {post.photos.map((src, i) => (
-                  <motion.div
-                    key={i}
-                    className="photo-item"
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ type: "spring", stiffness: 250 }}
-                    onClick={() => openZoom(post, i)}
-                  >
-                    <img src={src} alt="gallery" />
-                  </motion.div>
-                ))}
-              </div>
+              <Masonry
+                items={post.photos}
+                ease="power3.out"
+                duration={0.6}
+                stagger={0.05}
+                animateFrom="bottom"
+                scaleOnHover
+                hoverScale={0.95}
+                blurToFocus
+                colorShiftOnHover={false}
+              />
             </motion.div>
           ))}
         </motion.div>

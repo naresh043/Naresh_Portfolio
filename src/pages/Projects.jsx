@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
 import "../CSS/projects.css";
-import img from "../../photos/project-img/inventory-order.png"
+import img from "../../photos/project-img/inventory-order.png";
 
 import CardSwap, { Card } from "../components/helpers/cardswap/CardSwap";
 
@@ -44,6 +44,9 @@ const PROJECTS = [
 ];
 
 export default function Projects() {
+  const openLiveProject = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
   return (
     <motion.section
       className="projects-container"
@@ -84,7 +87,12 @@ export default function Projects() {
           >
             {PROJECTS.map((p, idx) => (
               <Card key={idx}>
-                <div className="project-card">
+                <div
+                  className="project-card"
+                  onClick={() => openLiveProject(p.live)}
+                  role="button"
+                  tabIndex={0}
+                >
                   {/* TOP CARD TITLE (overlay) */}
                   <div className="project-card-header">{p.title}</div>
 
@@ -110,6 +118,9 @@ export default function Projects() {
                       target="_blank"
                       rel="noreferrer"
                       className="btn code-btn"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                      }}
                     >
                       <Github size={14} /> Code
                     </a>
@@ -118,6 +129,9 @@ export default function Projects() {
                       target="_blank"
                       rel="noreferrer"
                       className="btn live-btn"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                      }}
                     >
                       <ExternalLink size={14} /> Live
                     </a>
