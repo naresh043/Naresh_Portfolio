@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import "../CSS/Gallery.css";
-import Masonry from "../components/helpers/Masonry/MasonryGrid";
+import Masonry from "../components/helpers/masonry/MasonryGrid";
 
 const IMAGES = {
   personal: [
