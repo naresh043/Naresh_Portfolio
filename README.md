@@ -41,7 +41,7 @@ I love crafting clean user interfaces, integrating scalable backend APIs, and bu
 <h2 align="center">🐍 Contribution Snake</h2>
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/shannu1653/Shanmukha_Portfolio/output/github-contribution-grid-snake.svg"/>
+<img src="https://raw.githubusercontent.com/naresh043/Naresh_Portfolio/output/github-contribution-grid-snake.svg" />
 </p>
 
 ---
@@ -49,45 +49,40 @@ I love crafting clean user interfaces, integrating scalable backend APIs, and bu
 ## 📊 GitHub Activity
 
 <p align="center">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=shannu1653&theme=tokyonight"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=naresh043&theme=tokyonight" />
 </p>
 
 <p align="center">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=shannu1653&theme=tokyonight"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=shannu1653&theme=tokyonight"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=naresh043&theme=tokyonight" width="45%"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=naresh043&theme=tokyonight" width="45%"/>
 </p>
 
 <p align="center">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=shannu1653&theme=tokyonight"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=shannu1653&theme=tokyonight"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=naresh043&theme=tokyonight" width="45%"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=naresh043&theme=tokyonight" width="45%"/>
 </p>
-
-
-
 
 ## 🧠 Tech Stack
 
 <p align="center">
-<img src="https://skillicons.dev/icons?i=react,js,python,django,mysql,html,css,git,github,vscode&theme=dark"/>
+  <img src="https://skillicons.dev/icons?i=react,js,redux,html,css,tailwind,bootstrap,nodejs,express,mongodb,git,github,postman,vscode&theme=dark" />
 </p>
 
 ---
 
 ## 🚀 Animated Skill Rings
+
 <p align="center"> <!-- React --> <img src="https://raw.githubusercontent.com/shannu1653/Shanmukha_Portfolio/main/assets/skills/react.svg"
  width="130"/> <!-- JS --> <img src="https://raw.githubusercontent.com/shannu1653/Shanmukha_Portfolio/main/assets/skills/js.svg" width="130"/> <!-- Python --> <img src="https://raw.githubusercontent.com/shannu1653/Shanmukha_Portfolio/main/assets/skills/python.svg" width="130"/> <!-- Django --> <img src="https://raw.githubusercontent.com/shannu1653/Shanmukha_Portfolio/main/assets/skills/django.svg" width="130"/> <br/> <!-- MySQL --> <img src="https://raw.githubusercontent.com/shannu1653/Shanmukha_Portfolio/main/assets/skills/mysql.svg" width="130"/> <!-- Git --> <img src="https://raw.githubusercontent.com/shannu1653/Shanmukha_Portfolio/main/assets/skills/git.svg" width="130"/> </p>
 
-
-
 ## ⭐ Featured Projects
-
 
 ### 🧑‍💻 Personal Portfolio Website
 
 🔹 Modern Developer Portfolio  
 🔹 React + Vite Frontend  
 🔹 Gallery, Certificates, Resume Download  
-🔹 Responsive Premium UI  
+🔹 Responsive Premium UI
 
 🌐 Live Demo: https://shanmukha-portfolio-three.vercel.app  
 💻 GitHub: https://github.com/shannu1653/Shanmukha_Portfolio
@@ -104,6 +99,7 @@ I love crafting clean user interfaces, integrating scalable backend APIs, and bu
 </p>
 
 ---
+
 ---
 
 ### 🎓 MCA Study Hub – Notes & Previous Year Papers Platform
@@ -111,7 +107,7 @@ I love crafting clean user interfaces, integrating scalable backend APIs, and bu
 🔹 Full-Stack Platform for MCA students  
 🔹 Upload / Download Notes & PYQs  
 🔹 Django REST + React + MySQL  
-🔹 JWT Authentication + Admin Panel  
+🔹 JWT Authentication + Admin Panel
 
 🌐 Live Demo: https://mca-study-hub.vercel.app  
 💻 GitHub: https://github.com/shannu1653/MCA_Study_Hub
@@ -126,11 +122,9 @@ I love crafting clean user interfaces, integrating scalable backend APIs, and bu
 
 🟢 Premium Eventbrite Clone  
 🟢 StudentHub Resource Sharing Platform  
-🟢 Traffic Management Dashboard  
+🟢 Traffic Management Dashboard
 
 (Adding soon…)
-
-
 
 ---
 
@@ -139,7 +133,7 @@ I love crafting clean user interfaces, integrating scalable backend APIs, and bu
 • 2023 — Started Full Stack Development  
 • 2024 — Built MCA Study Hub  
 • 2025 — Production Projects  
-• 2026 — Advanced React + Django  
+• 2026 — Advanced React + Django
 
 ---
 
@@ -151,8 +145,8 @@ I love crafting clean user interfaces, integrating scalable backend APIs, and bu
 <img src="public/certs/codathon.png" width="180"/>
 <img src="public/certs/hack2skill.png" width="180"/>
 </p> -->
-adding soon...................
----
+
+## adding soon...................
 
 ## 📸 Project Gallery
 
@@ -168,7 +162,7 @@ adding soon...................
 📧 Email: pentashanmukha2002@gmail.com  
 💼 LinkedIn: https://www.linkedin.com/in/shanmukhapenta  
 🌐 Portfolio: https://shanmukha-portfolio-three.vercel.app  
-💬 WhatsApp: https://wa.me/918096085857  
+💬 WhatsApp: https://wa.me/918096085857
 
 ---
 

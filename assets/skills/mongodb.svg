@@ -1,0 +1,43 @@
+<svg width="140" height="140" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow-mongo">
+      <feGaussianBlur stdDeviation="6" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Base circle -->
+  <circle cx="70" cy="70" r="55" stroke="#111" stroke-width="12" fill="none" />
+
+  <!-- Progress circle (50%) -->
+  <circle
+    cx="70"
+    cy="70"
+    r="55"
+    stroke="#47A248"
+    stroke-width="12"
+    fill="none"
+    stroke-dasharray="345"
+    stroke-dashoffset="173"
+    filter="url(#glow-mongo)"
+  >
+    <animate
+      attributeName="stroke-dashoffset"
+      from="345"
+      to="173"
+      dur="2s"
+      fill="freeze"
+    />
+  </circle>
+
+  <text x="70" y="65" text-anchor="middle" fill="white" font-size="20" font-weight="bold">
+    50%
+  </text>
+
+  <text x="70" y="88" text-anchor="middle" fill="#47A248" font-size="14">
+    MongoDB
+  </text>
+</svg>
