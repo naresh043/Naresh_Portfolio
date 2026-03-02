@@ -224,11 +224,10 @@
 //   );
 // }
 
-
-
 import React, { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "../../assets/p_logo.png";
 
 /* ================= NAV LINKS ================= */
 
@@ -280,26 +279,73 @@ export default function Navbar() {
         }}
       >
         {/* ================= LOGO ================= */}
-        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: 14,
+            cursor: "pointer",
+          }}
+        >
+          {/* LOGO */}
           <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ type: "spring", stiffness: 200 }}
+            initial={{ scale: 0.6, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ type: "spring", stiffness: 180, damping: 12 }}
+            whileHover={{ scale: 1.08 }}
             style={{
-              fontWeight: 800,
-              fontSize: "1.4rem",
-              color: "var(--accent)",
-              letterSpacing: "1px",
+              width: 46,
+              height: 46,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              borderRadius: "12px",
+              background:
+                "linear-gradient(135deg, rgba(0,255,213,0.18), rgba(0,255,213,0.05))",
+              border: "1px solid rgba(0,255,213,0.35)",
+              boxShadow: "0 0 18px rgba(0,255,213,0.25)",
+              flexShrink: 0,
             }}
           >
-            NG
+            <img
+              src={logo}
+              alt="Naresh Sanjeev Logo"
+              style={{
+                width: 26,
+                height: 26,
+                objectFit: "contain",
+              }}
+            />
           </motion.div>
 
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <h1 style={{ margin: 0, fontSize: 14 }}>
+          {/* TEXT */}
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              lineHeight: 1.15,
+            }}
+          >
+            <h1
+              style={{
+                margin: 0,
+                fontSize: 15,
+                fontWeight: 600,
+                color: "#fff",
+                letterSpacing: "0.4px",
+              }}
+            >
               Naresh Sanjeev
             </h1>
-            <span style={{ fontSize: 12, color: "var(--muted)" }}>
+
+            <span
+              style={{
+                fontSize: 12,
+                color: "rgba(255,255,255,0.6)",
+                fontWeight: 500,
+                letterSpacing: "0.3px",
+              }}
+            >
               MERN Stack Developer
             </span>
           </div>
