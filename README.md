@@ -114,6 +114,13 @@ Node.js, Express.js, MongoDB, JWT
 💻 GitHub: https://github.com/naresh043/Inventory-OrderManagementSystem-
 
 ---
+</a>
+<a href="https://github.com/shannu1653/Shanmukha_Portfolio">
+<img src="https://raw.githubusercontent.com/naresh043/Naresh_Portfolio/tree/main/assets/skills/portfolio1.png">
+</a>
+</p>
+_---
+
 
 ### 🎓 E-Tech – Full-Stack E-Learning Platform
 
@@ -129,6 +136,13 @@ React, Redux Toolkit, Node.js, Express.js, MongoDB, JWT, REST APIs
 🌐 Live: https://e-learnify-nine.vercel.app/  
 💻 GitHub: https://github.com/naresh043/react-project
 
+---
+
+
+<p align="center">
+<a href="https://github.com/naresh043/react-project">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=shannu1653&repo=MCA_Study_Hub&theme=tokyonight">
+</p>
 ---
 
 ## 🧠 What I Focus On
@@ -150,6 +164,18 @@ React, Redux Toolkit, Node.js, Express.js, MongoDB, JWT, REST APIs
 
 ---
 
+adding soon...................
+---
+
+## 📸 Project Gallery
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/shannu1653/Shanmukha_Portfolio/main/assets/skills/portfolio.png" width="45%"/>
+<img src="https://raw.githubusercontent.com/shannu1653/Shanmukha_Portfolio/main/assets/skills/p1.png" width="45%"/>
+</p>
+
+---
+
 ## 📬 Connect With Me
 
 📧 Email: naresh732003@gmail.com  
@@ -163,6 +189,14 @@ React, Redux Toolkit, Node.js, Express.js, MongoDB, JWT, REST APIs
 ## 👀 Visitor Counter
 
 <img src="https://komarev.com/ghpvc/?username=naresh043&style=for-the-badge&color=00ffd5"/>
+
+---
+
+---
+
+## 🏁 License
+
+MIT License — free to use, fork & modify.
 
 ---
 
