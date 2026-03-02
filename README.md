@@ -72,114 +72,100 @@ I love crafting clean user interfaces, integrating scalable backend APIs, and bu
 
 ## 🚀 Animated Skill Rings
 
-<p align="center"> <!-- React --> <img src="https://raw.githubusercontent.com/shannu1653/Shanmukha_Portfolio/main/assets/skills/react.svg"
- width="130"/> <!-- JS --> <img src="https://raw.githubusercontent.com/shannu1653/Shanmukha_Portfolio/main/assets/skills/js.svg" width="130"/> <!-- Python --> <img src="https://raw.githubusercontent.com/shannu1653/Shanmukha_Portfolio/main/assets/skills/python.svg" width="130"/> <!-- Django --> <img src="https://raw.githubusercontent.com/shannu1653/Shanmukha_Portfolio/main/assets/skills/django.svg" width="130"/> <br/> <!-- MySQL --> <img src="https://raw.githubusercontent.com/shannu1653/Shanmukha_Portfolio/main/assets/skills/mysql.svg" width="130"/> <!-- Git --> <img src="https://raw.githubusercontent.com/shannu1653/Shanmukha_Portfolio/main/assets/skills/git.svg" width="130"/> </p>
+<p align="center">
+  <!-- React -->
+  <img src="https://raw.githubusercontent.com/naresh043/Naresh_Portfolio/main/assets/skills/react.svg" width="130"/>
+
+  <!-- JavaScript -->
+  <img src="https://raw.githubusercontent.com/naresh043/Naresh_Portfolio/main/assets/skills/js.svg" width="130"/>
+
+  <!-- Node.js -->
+  <img src="https://raw.githubusercontent.com/naresh043/Naresh_Portfolio/main/assets/skills/node.svg" width="130"/>
+
+  <!-- Express -->
+  <img src="https://raw.githubusercontent.com/naresh043/Naresh_Portfolio/main/assets/skills/express.svg" width="130"/>
+
+  <br/>
+
+  <!-- MongoDB -->
+  <img src="https://raw.githubusercontent.com/naresh043/Naresh_Portfolio/main/assets/skills/mongodb.svg" width="130"/>
+
+  <!-- Git -->
+  <img src="https://raw.githubusercontent.com/naresh043/Naresh_Portfolio/main/assets/skills/git.svg" width="130"/>
+</p>
 
 ## ⭐ Featured Projects
 
-### 🧑‍💻 Personal Portfolio Website
+### 📦 Inventory & Order Management System  
+**Role-Based Full-Stack Web Application**
 
-🔹 Modern Developer Portfolio  
-🔹 React + Vite Frontend  
-🔹 Gallery, Certificates, Resume Download  
-🔹 Responsive Premium UI
+• Built a scalable inventory and order management system with dashboards  
+• Implemented JWT-based authentication and role-based access control  
+• Roles: Admin, Sales, Warehouse, Viewer  
+• Inventory tracking, order lifecycle management, and stock logs  
+• Implemented pagination, search, and filtering for large datasets  
+• Designed modular and reusable UI using Prime React and Tailwind CSS  
 
-🌐 Live Demo: https://shanmukha-portfolio-three.vercel.app  
-💻 GitHub: https://github.com/shannu1653/Shanmukha_Portfolio
+**Tech Stack:**  
+React, Redux Toolkit, RTK Query, Prime React, Tailwind CSS,  
+Node.js, Express.js, MongoDB, JWT  
 
----
-
-<p align="center">
-<a href="https://github.com/shannu1653/MCA_Study_Hub">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=shannu1653&repo=MCA_Study_Hub&theme=tokyonight">
-</a>
-<a href="https://github.com/shannu1653/Shanmukha_Portfolio">
-<img src="https://raw.githubusercontent.com/shannu1653/Shanmukha_Portfolio/main/assets/skills/portfolio.png">
-</a>
-</p>
+🌐 Live: https://inventory-orders-management-system.netlify.app/login  
+💻 GitHub: https://github.com/naresh043/Inventory-OrderManagementSystem-
 
 ---
 
----
+### 🎓 E-Tech – Full-Stack E-Learning Platform
 
-### 🎓 MCA Study Hub – Notes & Previous Year Papers Platform
+• Developed a full-stack e-learning platform for course browsing and enrollment  
+• Implemented authentication and protected routes using JWT  
+• Integrated REST APIs for users, courses, and enrollments  
+• Built responsive UI with React and Redux Toolkit  
+• Implemented role-based access for authenticated users  
 
-🔹 Full-Stack Platform for MCA students  
-🔹 Upload / Download Notes & PYQs  
-🔹 Django REST + React + MySQL  
-🔹 JWT Authentication + Admin Panel
+**Tech Stack:**  
+React, Redux Toolkit, Node.js, Express.js, MongoDB, JWT, REST APIs  
 
-🌐 Live Demo: https://mca-study-hub.vercel.app  
-💻 GitHub: https://github.com/shannu1653/MCA_Study_Hub
-
-<a href="https://github.com/shannu1653/Shanmukha_Portfolio">
-<img src="https://raw.githubusercontent.com/shannu1653/Shanmukha_Portfolio/main/assets/skills/McaStudyhub.png">
-</a>
+🌐 Live: https://e-learnify-nine.vercel.app/  
+💻 GitHub: https://github.com/naresh043/react-project
 
 ---
 
-### 🚀 Upcoming Projects
+## 🧠 What I Focus On
 
-🟢 Premium Eventbrite Clone  
-🟢 StudentHub Resource Sharing Platform  
-🟢 Traffic Management Dashboard
-
-(Adding soon…)
+• Building real-world MERN stack applications  
+• Clean, reusable component-based architecture  
+• Secure authentication and authorization using JWT  
+• REST API integration and scalable backend systems  
+• Responsive UI with modern animations and UX best practices  
 
 ---
 
 ## ⏳ Career Timeline
 
-• 2023 — Started Full Stack Development  
-• 2024 — Built MCA Study Hub  
-• 2025 — Production Projects  
-• 2026 — Advanced React + Django
-
----
-
-## 🏅 Certifications
-
-<!-- <p align="center">
-<img src="public/certs/adira.png" width="180"/>
-<img src="public/certs/bugbuzz.png" width="180"/>
-<img src="public/certs/codathon.png" width="180"/>
-<img src="public/certs/hack2skill.png" width="180"/>
-</p> -->
-
-## adding soon...................
-
-## 📸 Project Gallery
-
-<p align="center">
-<img src="https://raw.githubusercontent.com/shannu1653/Shanmukha_Portfolio/main/assets/skills/portfolio.png" width="45%"/>
-<img src="https://raw.githubusercontent.com/shannu1653/Shanmukha_Portfolio/main/assets/skills/p1.png" width="45%"/>
-</p>
+• **2024** — Started Full-Stack / MERN Development  
+• **2024** — Built React and Full-Stack Projects  
+• **2025** — Full-Stack Internship & Production-Level Applications  
+• **2026** — Advanced MERN Stack & Scalable Systems  
 
 ---
 
 ## 📬 Connect With Me
 
-📧 Email: pentashanmukha2002@gmail.com  
-💼 LinkedIn: https://www.linkedin.com/in/shanmukhapenta  
+📧 Email: naresh732003@gmail.com  
+💼 LinkedIn: https://www.linkedin.com/in/nareshsanjeev  
+💻 GitHub: https://github.com/naresh043  
 🌐 Portfolio: https://shanmukha-portfolio-three.vercel.app  
-💬 WhatsApp: https://wa.me/918096085857
+📱 Mobile: +91 9703328790  
 
 ---
 
 ## 👀 Visitor Counter
 
-<p align="center">
-<img src="https://komarev.com/ghpvc/?username=shannu1653&style=for-the-badge&color=00ffd5"/>
-</p>
-
----
-
-## 🏁 License
-
-MIT License — free to use, fork & modify.
+<img src="https://komarev.com/ghpvc/?username=naresh043&style=for-the-badge&color=00ffd5"/>
 
 ---
 
 <p align="center">
-⭐ Built with passion by <b>Shanmukha Penta</b>
+⭐ Built with passion by <b>Sanjeevappa Gari Naresh</b>
 </p>
