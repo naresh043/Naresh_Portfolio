@@ -172,7 +172,7 @@ React, Redux Toolkit, Node.js, Express.js, MongoDB, JWT, REST APIs
 📧 Email: naresh732003@gmail.com  
 💼 LinkedIn: https://www.linkedin.com/in/nareshsanjeev  
 💻 GitHub: https://github.com/naresh043  
-🌐 Portfolio: https://nareshsanjeeevportfolio.netlify.app/
+🌐 Portfolio: https://nareshsanjeeevportfolio.netlify.app/  
 📱 Mobile: +91 9703328790
 
 ---
