@@ -75,7 +75,7 @@ export default function Home() {
           <h1 className="home-title">
             Hi, I’m{" "}
             <BlurText
-              text="Naresh"
+              text="Naresh Sanjeev"
               className="home-name"
               animateBy="chars"
               direction="top"
@@ -83,6 +83,11 @@ export default function Home() {
             />
           </h1>
 
+          <p className="seo-intro">
+            I am Naresh Sanjeev, a MERN Stack Developer and Full Stack Developer
+            based in India specializing in React, Node.js, MongoDB and modern
+            web applications.
+          </p>
           <p className="home-subtitle">
             MERN Stack Developer | Frontend Developer | Full Stack Developer
           </p>
