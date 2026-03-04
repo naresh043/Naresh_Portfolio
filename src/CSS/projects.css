@@ -1,8 +1,9 @@
 /* ===== SECTION ===== */
 .projects-container {
-  padding: 30px;
+  padding: 40px 30px;
   background: rgba(255, 255, 255, 0.03);
   border-radius: 16px;
+  overflow: hidden;
 }
 
 /* ===== LAYOUT ===== */
@@ -10,7 +11,7 @@
   display: grid;
   grid-template-columns: 25% 75%;
   align-items: center;
-  gap: 80px;
+  gap: 60px;
   min-height: 75vh;
 }
 
@@ -34,31 +35,29 @@
 
 /* ===== RIGHT SIDE ===== */
 .projects-cards {
-  height: 600px;
   display: flex;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+  min-height: 560px;
 }
 
 /* ===== CARD ===== */
 .project-card {
   padding: 20px;
+  padding-top: 46px;
   position: relative;
   height: 100%;
-  padding-top: 42px; /* space for header strip */
-
-  background: linear-gradient(
-    145deg,
-    rgba(20, 20, 20, 0.95),
-    rgba(10, 10, 10, 0.95)
-  );
-
+  background: linear-gradient(145deg, rgba(20,20,20,0.95), rgba(10,10,10,0.95));
   border-radius: 16px;
   border: 1px solid rgba(0, 255, 255, 0.12);
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.08);
-
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  box-sizing: border-box;
 }
 
 /* ===== TOP CARD TITLE ===== */
@@ -67,67 +66,69 @@
   top: 0;
   left: 0;
   right: 0;
-
-  height: 38px;
+  height: 42px;
   padding: 0 16px;
-
   display: flex;
   align-items: center;
-
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   color: #e6faff;
-
-  background: linear-gradient(
-    90deg,
-    rgba(6, 182, 212, 0.15),
-    rgba(6, 182, 212, 0.05)
-  );
-
+  background: linear-gradient(90deg, rgba(6,182,212,0.15), rgba(6,182,212,0.05));
   border-bottom: 1px solid rgba(0, 255, 255, 0.2);
-
   z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* ===== IMAGE ===== */
 .project-ss {
   border-radius: 12px;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .project-ss img {
   width: 100%;
-  height: 180px;
+  height: 160px;
   object-fit: cover;
   border-radius: 12px;
+  display: block;
 }
 
 /* ===== CONTENT ===== */
 .project-content {
   margin-top: 12px;
+  flex: 1;
+  overflow: hidden;
 }
 
 .project-desc {
-  font-size: 14px;
+  font-size: 13px;
   color: #bbb;
   line-height: 1.6;
   margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* ===== TECH ===== */
 .project-tech {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 5px;
 }
 
 .tech-badge {
   background: rgba(0, 255, 255, 0.06);
   border: 1px solid rgba(0, 255, 255, 0.12);
-  padding: 3px 8px;
+  padding: 3px 7px;
   border-radius: 6px;
-  font-size: 12px;
+  font-size: 11px;
   color: #aaf;
+  white-space: nowrap;
 }
 
 /* ===== LINKS ===== */
@@ -136,6 +137,8 @@
   justify-content: flex-end;
   gap: 10px;
   margin-top: auto;
+  padding-top: 12px;
+  flex-shrink: 0;
 }
 
 .btn {
@@ -147,6 +150,7 @@
   font-size: 13px;
   text-decoration: none;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .code-btn {
@@ -158,59 +162,113 @@
 .live-btn {
   background: linear-gradient(90deg, #06b6d4, #0891b2);
   color: #fff;
+  border: none;
 }
 
-
-/* === HOVER POP EFFECT === */
-.project-card {
-  transition:
-    transform 0.35s ease,
-    box-shadow 0.35s ease;
-}
-
+/* ===== HOVER ===== */
 .card:hover .project-card {
-  transform: translateY(-14px) scale(1.04);
-  box-shadow:
-    0 20px 40px rgba(0, 255, 255, 0.25),
-    0 0 25px rgba(0, 255, 255, 0.35);
-  cursor: pointer;
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,255,255,0.25), 0 0 25px rgba(0,255,255,0.35);
 }
 
-/* Only top card should be clickable */
-.card:not(:last-child) {
-  pointer-events: none;
+/* ===== CARD SWAP ===== */
+.card-swap-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1100px;
+  overflow: visible;
 }
 
-.card:last-child {
-  pointer-events: auto;
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+  will-change: transform;
+  border-radius: 16px;
+  background: transparent;
+  backface-visibility: hidden;
 }
-/* ===== RESPONSIVE ===== */
-@media (max-width: 900px) {
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
   .projects-layout {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 30px;
+    min-height: unset;
     text-align: center;
   }
 
   .projects-text {
-    margin: 0 auto;
+    max-width: 100%;
   }
 
   .projects-cards {
-    height: 520px;
-  }
-
-  .card-swap-container {
-    transform: scale(0.85);
+    min-height: 520px;
+    justify-content: center;
   }
 }
 
-@media (max-width: 480px) {
-  .projects-cards {
-    height: 480px;
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .projects-container {
+    padding: 24px 16px;
   }
 
-  .card-swap-container {
-    transform: scale(0.75);
+  .projects-layout {
+    gap: 24px;
+  }
+
+  .projects-heading {
+    font-size: 2rem;
+  }
+
+  .projects-description {
+    font-size: 0.95rem;
+  }
+
+  .projects-cards {
+    min-height: 480px;
+    width: 100%;
+  }
+
+  .project-ss img {
+    height: 130px;
+  }
+
+  .project-desc {
+    font-size: 12px;
+    -webkit-line-clamp: 2;
+  }
+
+  .tech-badge {
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+
+/* ===== SMALL MOBILE ===== */
+@media (max-width: 400px) {
+  .projects-container {
+    padding: 20px 12px;
+  }
+
+  .projects-heading {
+    font-size: 1.7rem;
+  }
+
+  .projects-cards {
+    min-height: 440px;
+  }
+
+  .project-ss img {
+    height: 110px;
   }
 }

@@ -1,29 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
 import "../CSS/projects.css";
 import inventoryOrder from "../../photos/project-img/inventory-order.png";
 import eLearning from "../../photos/project-img/e-learning.png";
-
-
 import CardSwap, { Card } from "../components/helpers/cardswap/CardSwap";
 
 const PROJECTS = [
   {
     title: "📦 Inventory & Order Management System",
     desc: "Role-based full-stack web application with inventory tracking, order management, dashboards, and JWT-based access control.",
-    ss: inventoryOrder ,
-    tech: [
-      "React",
-      "Redux Toolkit",
-      "RTK Query",
-      "Prime React",
-      "Tailwind CSS",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "JWT",
-    ],
+    ss: inventoryOrder,
+    tech: ["React", "Redux Toolkit", "RTK Query", "Prime React", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "JWT"],
     live: "https://inventory-orders-management-system.netlify.app/login",
     code: "https://github.com/naresh043/Inventory-OrderManagementSystem-",
   },
@@ -31,24 +19,39 @@ const PROJECTS = [
     title: "🎓 E-Tech – E-Learning Platform",
     desc: "Full-stack e-learning platform for course browsing and enrollment with authentication and role-based access.",
     ss: eLearning,
-    tech: [
-      "React",
-      "Redux Toolkit",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "JWT",
-      "REST APIs",
-    ],
+    tech: ["React", "Redux Toolkit", "Node.js", "Express.js", "MongoDB", "JWT", "REST APIs"],
     live: "https://e-learnify-nine.vercel.app/",
     code: "https://github.com/naresh043/react-project",
   },
 ];
 
+function useCardSize() {
+  const [size, setSize] = useState({ width: 500, height: 520 });
+
+  useEffect(() => {
+    const update = () => {
+      const w = window.innerWidth;
+      if (w <= 380) setSize({ width: w - 40, height: 420 });
+      else if (w <= 480) setSize({ width: w - 48, height: 440 });
+      else if (w <= 768) setSize({ width: Math.min(w - 48, 420), height: 460 });
+      else if (w <= 1024) setSize({ width: 420, height: 480 });
+      else setSize({ width: 500, height: 520 });
+    };
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
+
+  return size;
+}
+
 export default function Projects() {
+  const { width, height } = useCardSize();
+
   const openLiveProject = (url) => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
+
   return (
     <motion.section
       className="projects-container"
@@ -68,7 +71,6 @@ export default function Projects() {
           >
             🚀 Projects
           </motion.h2>
-
           <p className="projects-description">
             A collection of my major works — blending research, AI innovation,
             scalable systems, and real-world problem solving.
@@ -78,14 +80,14 @@ export default function Projects() {
         {/* RIGHT SIDE — CARD SWAP */}
         <div className="projects-cards">
           <CardSwap
-            width={500}
-            height={520}
-            cardDistance={100}
-            verticalDistance={50}
+            width={width}
+            height={height}
+            cardDistance={60}
+            verticalDistance={40}
             delay={4200}
             pauseOnHover
             easing="elastic"
-            onCardClick={(index) => {}}
+            onCardClick={() => {}}
           >
             {PROJECTS.map((p, idx) => (
               <Card key={idx}>
@@ -95,7 +97,6 @@ export default function Projects() {
                   role="button"
                   tabIndex={0}
                 >
-                  {/* TOP CARD TITLE (overlay) */}
                   <div className="project-card-header">{p.title}</div>
 
                   <div className="project-ss">
@@ -104,12 +105,9 @@ export default function Projects() {
 
                   <div className="project-content">
                     <p className="project-desc">{p.desc}</p>
-
                     <div className="project-tech">
                       {p.tech.map((t) => (
-                        <span key={t} className="tech-badge">
-                          {t}
-                        </span>
+                        <span key={t} className="tech-badge">{t}</span>
                       ))}
                     </div>
                   </div>
@@ -120,9 +118,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noreferrer"
                       className="btn code-btn"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                      }}
+                      onClick={(e) => e.stopPropagation()}
                     >
                       <Github size={14} /> Code
                     </a>
@@ -131,9 +127,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noreferrer"
                       className="btn live-btn"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                      }}
+                      onClick={(e) => e.stopPropagation()}
                     >
                       <ExternalLink size={14} /> Live
                     </a>

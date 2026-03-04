@@ -96,7 +96,7 @@ export default function Contact() {
         transition={{ duration: 0.7 }}
         className="contact-title"
       >
-        Let’s Connect & Collaborate 🤝
+        Let’s Connect & Collaborate 
       </motion.h1>
 
       <motion.p
@@ -181,7 +181,7 @@ export default function Contact() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          🚀 Send Message
+          Send Message
         </motion.button>
 
         {status && (

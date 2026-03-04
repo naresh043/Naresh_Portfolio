@@ -26,7 +26,7 @@ I love crafting clean user interfaces, integrating scalable backend APIs, and bu
 
 ## 🌐 Live Portfolio
 
-👉 https://shanmukha-portfolio-three.vercel.app/
+👉 https://nareshsanjeeevportfolio.netlify.app/
 
 ---
 

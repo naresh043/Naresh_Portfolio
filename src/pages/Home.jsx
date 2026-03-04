@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import BlurText from "../components/helpers/BlurText";
 import CurvedLoop from "../components/helpers/CurvedLoop";
 import profileImg from "../../assets/photos/NareshPhoto.jpg";
+// Add this import
+import { MapPin, Briefcase, Mail } from "lucide-react";
 
 import "../CSS/Home.css";
 import "../index.css";
@@ -109,9 +111,21 @@ export default function Home() {
           </div>
 
           <div className="info-cards">
-            <InfoCard label="📍 Location" value="India" />
-            <InfoCard label="💼 Expertise" value="MERN & Role-Based Apps" />
-            <InfoCard label="📧 Contact" value="naresh732003@gmail.com" />
+            <InfoCard
+              icon={<MapPin size={16} />}
+              label="Location"
+              value="India"
+            />
+            <InfoCard
+              icon={<Briefcase size={16} />}
+              label="Expertise"
+              value="MERN & Role-Based Apps"
+            />
+            <InfoCard
+              icon={<Mail size={16} />}
+              label="Contact"
+              value="naresh732003@gmail.com"
+            />
           </div>
         </motion.div>
       </div>
@@ -141,14 +155,16 @@ export default function Home() {
 
 /* ================= INFO CARD ================= */
 
-function InfoCard({ label, value }) {
+function InfoCard({ icon, label, value }) {
   return (
     <motion.div
       className="info-card"
       whileHover={{ y: -6 }}
       transition={{ type: "spring", stiffness: 200 }}
     >
-      <span>{label}</span>
+      <span className="flex items-center gap-1.5">
+        {icon} {label}
+      </span>
       <p>{value}</p>
     </motion.div>
   );

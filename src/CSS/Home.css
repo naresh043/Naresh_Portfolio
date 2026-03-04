@@ -342,3 +342,149 @@
     border-color: transparent;
   }
 }
+
+/* ================= PHOTO FRAME FIX ================= */
+.photo-frame {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  right: 80px;          /* desktop only */
+  border-radius: 16px;
+  overflow: hidden;
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 45px rgba(0, 255, 200, 0.25);
+  background: #000;
+}
+
+/* ================= SEO / SUBTITLE ================= */
+.seo-intro {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 0.3rem;
+  line-height: 1.5;
+}
+
+.home-subtitle {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 0.4rem;
+}
+
+/* ================= INFO CARD SPAN FIX ================= */
+.info-card span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .home-section {
+    padding: 5rem 1rem 2rem;
+    gap: 2rem;
+    justify-content: flex-start;
+  }
+
+  .home-top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .photo-container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .photo-frame {
+    width: 200px;
+    height: 200px;
+    right: 0;             /* remove desktop offset */
+  }
+
+  .home-info {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .home-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .seo-intro {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .home-subtitle {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  .skill-bubbles {
+    justify-content: center;
+  }
+
+  .skill-pill {
+    font-size: 0.8rem;
+    padding: 6px 13px;
+  }
+
+  .info-cards {
+    justify-content: center;
+    gap: 0.7rem;
+  }
+
+  .info-card {
+    min-width: 120px;
+    padding: 10px 12px;
+    flex: 1 1 calc(33% - 0.7rem);
+    max-width: 160px;
+  }
+
+  .info-card p {
+    font-size: 0.75rem;
+    word-break: break-word;
+  }
+
+  .quick-links {
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .quick-links-title {
+    font-size: 1.2rem;
+  }
+
+  .quick-links-list {
+    gap: 1rem;
+  }
+
+  .quick-link-img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .home-title {
+    font-size: 1.7rem;
+  }
+
+  .photo-frame {
+    width: 170px;
+    height: 170px;
+  }
+
+  .info-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
