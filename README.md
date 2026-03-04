@@ -6,7 +6,7 @@
 <a href="https://drive.google.com/file/d/1jCPKZ2ku41HZQF3XK212s01Umq1xGN3H/view?usp=sharing">
 <img src="https://img.shields.io/badge/Download%20CV-00ffd5?style=for-the-badge"/>
 </a>
-<a href="https://shanmukha-portfolio-three.vercel.app/">
+<a href="https://nareshsanjeeevportfolio.netlify.app/">
 <img src="https://img.shields.io/badge/Portfolio-6366f1?style=for-the-badge"/>
 </a>
 <a href="https://www.linkedin.com/in/nareshsanjeev/">
@@ -95,7 +95,8 @@ I love crafting clean user interfaces, integrating scalable backend APIs, and bu
 </p>
 ## ⭐ Featured Projects
 
-### 📦 Inventory & Order Management System  
+### 📦 Inventory & Order Management System
+
 **Role-Based Full-Stack Web Application**
 
 • Built a scalable inventory and order management system with dashboards  
@@ -103,11 +104,11 @@ I love crafting clean user interfaces, integrating scalable backend APIs, and bu
 • Roles: Admin, Sales, Warehouse, Viewer  
 • Inventory tracking, order lifecycle management, and stock logs  
 • Implemented pagination, search, and filtering for large datasets  
-• Designed modular and reusable UI using Prime React and Tailwind CSS  
+• Designed modular and reusable UI using Prime React and Tailwind CSS
 
 **Tech Stack:**  
 React, Redux Toolkit, RTK Query, Prime React, Tailwind CSS,  
-Node.js, Express.js, MongoDB, JWT  
+Node.js, Express.js, MongoDB, JWT
 
 🌐 Live: https://inventory-orders-management-system.netlify.app/login  
 💻 GitHub: https://github.com/naresh043/Inventory-OrderManagementSystem-
@@ -124,10 +125,10 @@ Node.js, Express.js, MongoDB, JWT
 • Implemented authentication and protected routes using JWT  
 • Integrated REST APIs for users, courses, and enrollments  
 • Built responsive UI with React and Redux Toolkit  
-• Implemented role-based access for authenticated users  
+• Implemented role-based access for authenticated users
 
 **Tech Stack:**  
-React, Redux Toolkit, Node.js, Express.js, MongoDB, JWT, REST APIs  
+React, Redux Toolkit, Node.js, Express.js, MongoDB, JWT, REST APIs
 
 🌐 Live: https://e-learnify-nine.vercel.app/  
 💻 GitHub: https://github.com/naresh043/react-project
@@ -144,7 +145,7 @@ React, Redux Toolkit, Node.js, Express.js, MongoDB, JWT, REST APIs
 • Clean, reusable component-based architecture  
 • Secure authentication and authorization using JWT  
 • REST API integration and scalable backend systems  
-• Responsive UI with modern animations and UX best practices  
+• Responsive UI with modern animations and UX best practices
 
 ---
 
@@ -153,7 +154,7 @@ React, Redux Toolkit, Node.js, Express.js, MongoDB, JWT, REST APIs
 • **2024** — Started Full-Stack / MERN Development  
 • **2024** — Built React and Full-Stack Projects  
 • **2025** — Full-Stack Internship & Production-Level Applications  
-• **2026** — Advanced MERN Stack & Scalable Systems  
+• **2026** — Advanced MERN Stack & Scalable Systems
 
 ---
 
@@ -171,8 +172,8 @@ React, Redux Toolkit, Node.js, Express.js, MongoDB, JWT, REST APIs
 📧 Email: naresh732003@gmail.com  
 💼 LinkedIn: https://www.linkedin.com/in/nareshsanjeev  
 💻 GitHub: https://github.com/naresh043  
-🌐 Portfolio: https://shanmukha-portfolio-three.vercel.app  
-📱 Mobile: +91 9703328790  
+🌐 Portfolio: https://nareshsanjeeevportfolio.netlify.app/
+📱 Mobile: +91 9703328790
 
 ---
 
